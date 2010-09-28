@@ -1,0 +1,7 @@
+ASL Glove
+
+To compile & create the hex file 
+make hex
+
+To write to the AVR
+make writeflash
