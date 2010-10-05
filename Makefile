@@ -73,7 +73,7 @@ MCU=atmega168
 # accept the same MCU name as avr-gcc (for example
 # for ATmega8s, avr-gcc expects 'atmega8' and 
 # avrdude requires 'm8')
-#PROGRAMMER_MCU=m8
+PROGRAMMER_MCU=m168
 
 # Name of our project
 # (use a single word, e.g. 'myproject')
