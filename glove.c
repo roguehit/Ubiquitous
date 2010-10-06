@@ -77,7 +77,7 @@ establishContact();
 
 //serialWrite(0x45); // Clears the screen
 
-#if 1
+#if 0
 serialWrite(0x42);
 serialWrite(0x00);
 serialWrite(0x00);
@@ -86,7 +86,7 @@ _delay_ms(8000);
  
 //serialWrite(0x70); //Sets the Pen Size
 //serialWrite(0x00); //Sets the Pen Contour
-#if 0
+#if 1
 while(1){
         
 	
@@ -104,7 +104,7 @@ while(1){
 	serialWrite(0x73); 
 	serialWrite(0x00); 
 	serialWrite(0x00); 
-	serialWrite(0x00); 
+	serialWrite(0x01); 
 	serialWrite(0xff); 
 	serialWrite(0xff); 
 	
@@ -121,7 +121,7 @@ while(1){
 //for(i=0;i<5;i++)
 
 /*This Changes the Screen to the set color*/
-#if 1
+#if 0
 serialWrite(0x42);
 serialWrite(0x22);
 serialWrite(0x22);
@@ -164,7 +164,7 @@ serialWrite(0x01);
 #endif
 
 /*This Powers down/up the entire OLED*/
-#if 1
+#if 0
 serialWrite(0x59);
 serialWrite(0x03);
 serialWrite(0x00);

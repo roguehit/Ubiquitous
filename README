@@ -4,4 +4,5 @@ To compile & create the hex file
 make hex
 
 To write to the AVR
-make writeflash
+sudo avrdude -p m644p -c avrispmkII -U flash:w:glove.hex -P usb
+

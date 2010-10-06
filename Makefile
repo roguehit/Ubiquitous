@@ -225,9 +225,8 @@ hex: $(HEXTRG)
 
 
 writeflash: hex
-	$(AVRDUDE) -c $(AVRDUDE_PROGRAMMERID)   \
-	 -p $(PROGRAMMER_MCU) -P $(AVRDUDE_PORT) -e        \
-	 -U flash:w:$(HEXROMTRG)
+	sudo avrdude -p m644p -c avrispmkII -U flash:w:glove.hex -P usb
+
 
 install: writeflash
 
